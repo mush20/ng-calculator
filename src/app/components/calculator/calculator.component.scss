@@ -1,0 +1,32 @@
+.calculator {
+  padding: 10px;
+  background-color: #ccc;
+
+  &__display {
+    &-main {
+      text-align: right;
+      margin: 5px;
+      font-size: 34px;
+      border: 0px;
+      background-color: #ccc;
+      color: black;
+    }
+  }
+
+  .mat-raised-button {
+    margin: 5px;
+    height: 95%;
+
+    .mat-button-wrapper {
+      font-size: 36px;
+    }
+  }
+
+  &.small-devices {
+    width: 100%;
+
+    .calculator__display-main {
+      font-size: 58px;
+    }
+  }
+}

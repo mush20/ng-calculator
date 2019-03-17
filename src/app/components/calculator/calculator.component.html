@@ -1,0 +1,148 @@
+<section fxFlex
+         fxLayout="column">
+  <section fxShrink
+           class="calculator__display">
+    <section class="calculator__display-top">{{stackDisplay}}</section>
+    <section id="display-main" class="calculator__display-main">
+      {{display}}
+    </section>
+  </section>
+  <section fxFlex>
+
+    <mat-grid-list cols="5"
+                   rowHeight="4:3">
+      <mat-grid-tile>
+        <button id="key-7"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('7')">7
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-8"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('8')">8
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-9"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('9')">9
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-div"
+                mat-raised-button
+                fxFlex
+                color="primary"
+                (click)="doDivision()">/
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-reset"
+                mat-raised-button
+                fxFlex
+                (click)="doReset()">CE
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-4"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('4')">4
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-5"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('5')">5
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-6"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('6')">6
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-multi"
+                mat-raised-button
+                fxFlex
+                color="primary"
+                (click)="doMultiplication()">*
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-clear"
+                mat-raised-button
+                fxFlex
+                (click)="doClear()">C
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-1"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('1')">1
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-2"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('2')">2
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-3"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('3')">3
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-sub"
+                mat-raised-button
+                fxFlex
+                color="primary"
+                (click)="doSubtraction()">-
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile [rowspan]="2">
+        <button id="key-calc"
+                mat-raised-button
+                fxFlex
+                color="accent"
+                (click)="doCalculate()">=
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
+        <button id="key-0"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('0')">0
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-dot"
+                mat-raised-button
+                fxFlex
+                (click)="doKey('.')">.
+        </button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button id="key-add"
+                mat-raised-button
+                fxFlex
+                color="primary"
+                (click)="doAddition()">+
+        </button>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+  </section>
+</section>
