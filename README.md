@@ -1,5 +1,7 @@
 # Calculator
 
+[![Build Status](https://travis-ci.com/mush20/ng-calculator.svg?branch=master)](https://travis-ci.com/mush20/ng-calculator)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
 ## Development server
