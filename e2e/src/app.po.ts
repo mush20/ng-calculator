@@ -5,7 +5,11 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getTitleText() {
-    return element(by.css('app-root h1')).getText();
+  getDisplayText() {
+    return element(by.id('display-main')).getText();
+  }
+
+  getKey(id: string) {
+    return element(by.id(`key-${id}`));
   }
 }
